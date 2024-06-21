@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direvtive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <!-- Create a Directive in Angular -->
+     <div ng-app="myApp" w3-test-directive></div>
+
+     <script>
+        // With angular.module create a module in Angular
+        var app = angular.module("myApp", [])
+        // With app.directive init a directive
+        app.directive("w3TestDirective", function() {
+            return {
+                template : "I was made in a directive constructor!"
+            };
+        });
+     </script>
+    
+</body>
+</html>

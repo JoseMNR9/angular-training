@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <!-- Modules in Angular -->
+     <div ng-app="myApp" ng-controller="myCtrl">
+
+        {{ firstName + " " + lastName}}
+
+     </div>
+
+     <script>
+        // With angular.module create a module in Angular
+        var app = angular.module("myApp", [])
+        // With app.controller init a controller
+        app.controller("myCtrl", function($scope){
+            $scope.firstName = "John";
+            $scope.lastName = "Doe";
+        });
+     </script>
+    
+</body>
+</html>
