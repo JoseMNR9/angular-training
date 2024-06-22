@@ -8,13 +8,13 @@
 </head>
 <body>
     <!-- Create a Directive in Angular -->
-     <div ng-app="myApp" w3-test-directive></div>
+     <div ng-app="myApp" test></div>
 
      <script>
         // With angular.module create a module in Angular
         var app = angular.module("myApp", [])
         // With app.directive init a directive
-        app.directive("w3TestDirective", function() {
+        app.directive("test", function() {
             return {
                 template : "I was made in a directive constructor!"
             };
